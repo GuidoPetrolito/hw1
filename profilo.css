@@ -1,0 +1,260 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #1e213d;
+}
+
+section.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: darkred;
+    color: white;
+}
+
+section.container-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.dx {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+a#profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: -20px;
+    width: 100%;
+}
+
+.dx .profileImg {
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 16.5%;
+}
+
+div.sx {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+}
+
+img#imageWeb {
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    width: 15%;
+}
+
+h1#logo {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    font-size: 30px;
+    color: white;
+}
+
+@media(max-width: 500px) { 
+    img#imageWeb {
+        width: 30.9;
+        height: 23;
+    }
+
+    h1#logo {
+        margin: 5px 0px;
+        font-size: 15px;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: darkred;
+    position: absolute;
+}
+
+#informazioni {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#informazioni a {
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+@media(max-width: 500px) {
+    footer {
+        height: 35px;
+    }
+
+    #informazioni a {
+        padding: 3px;
+        font-size: 10px;
+    }
+}
+
+.sx a {
+    text-decoration: none;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#container_profilo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%-5px);
+
+    background-color: darkred;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+
+    background-image: url(utility/benvenutoImage.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.containerImage {
+    display: flex;
+    width: 20%;
+    margin: 25px 25px;
+    border-radius: 15px;
+}
+
+.containerImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#container_profilo h1 {
+    font-size: 75px;
+    color: white;
+    text-align: center;
+}
+
+@media(max-width:500px) {
+    #container_profilo h1 {
+        font-size: 25px;
+    }
+
+    .containerImage {
+        width: 40%;
+    }
+}
+
+#container_opzioni {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: calc(100%-5px);
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+.preferiti, .cronologia, .impostazioni, .logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 75%;
+    height: 75px;
+    background-color: darkred;
+
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    cursor:pointer;
+}
+
+.preferiti a, .cronologia a, .impostazioni a , .logout a {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+@media(max-width:500px) {
+    .preferiti a, .cronologia a, .impostazioni a , .logout a {
+        font-size: 15px;
+    }
+}
+
+.imageUp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%-10px);
+    border-radius: 15px;
+    margin: 5px;
+    margin-bottom: 75px;
+    margin-top: 25px;
+    background-color: whitesmoke;
+    border: 3px solid darkred;
+}
+
+.imageUp img {
+    border-radius: 15px;
+    padding: 10px;
+    width: 15%;
+}
+
+.hidden {
+    display: none;
+}

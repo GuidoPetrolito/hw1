@@ -1,0 +1,84 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+main section.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    background-color: darkred;
+    color: white;
+}
+
+main section.container-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+div.sx {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+}
+
+img#imageWeb {
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    width: 15%;
+}
+
+h1#logo {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    font-size: 30px;
+    color: white;
+}
+
+p {
+    padding: 50px;
+    font-family: terminicondizioni, times;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "terminicondizioni";
+    src: url(text/MonospaceTypewriter.ttf);
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: darkred;
+    position: absolute;
+}
+
+#informazioni {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#informazioni a {
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.sx a {
+    text-decoration: none;
+}

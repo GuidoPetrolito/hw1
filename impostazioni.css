@@ -1,0 +1,203 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #1e213d;
+}
+
+section.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: darkred;
+    color: white;
+}
+
+section.container-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.dx {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+a#profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: -20px;
+    width: 100%;
+}
+
+.dx .profileImg {
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 32.5%;
+    background-color: #1e213d;
+}
+
+div.sx {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+}
+
+img#imageWeb {
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    width: 15%;
+}
+
+h1#logo {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    font-size: 30px;
+    color: white;
+}
+
+@media(max-width: 500px) { 
+    img#imageWeb {
+        width: 30.9;
+        height: 23;
+    }
+
+    h1#logo {
+        margin: 5px 0px;
+        font-size: 15px;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: darkred;
+    position: absolute;
+}
+
+#informazioni {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#informazioni a {
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+@media(max-width: 500px) {
+    footer {
+        height: 35px;
+    }
+
+    #informazioni a {
+        padding: 3px;
+        font-size: 10px;
+    }
+}
+
+
+
+#container_opzioni {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: calc(100%-5px);
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+}
+
+.modUsername, .modPassword, .modEmail, .eliminaAccount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 75%;
+    height: 75px;
+    background-color: darkred;
+
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    cursor:pointer;
+
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.modUsername a, .modPassword a, .modEmail a {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+@media (max-width:500px) {
+    .eliminaAccount {
+        font-size: 15px;
+    }
+
+    .modUsername a, .modPassword a, .modEmail a {
+        font-size: 15px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+div p, div a {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.Question a {
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
